@@ -1,0 +1,25 @@
+cargo-features = ["different-binary-name"]
+
+[package]
+name = "audio_friend"
+version = "0.0.0"
+edition = "2021"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "audio_friend"
+filename = "Audio Friend"
+path = "src/file_io.rs"
+#
+#[[bin]]
+#name = "wav"
+#path = "src/wav.rs"
+#
+#[[bin]]
+#name = "aiff"
+#path = "src/aif.rs"
+
+[dependencies]
+extended = "0.1.0"
